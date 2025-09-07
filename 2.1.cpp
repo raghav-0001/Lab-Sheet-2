@@ -1,5 +1,6 @@
 // 2.1.cpp
 // Write a program to set a structure to hold a date (mm,dd and yy), assign values to the members of the structure and print out the values in the format 11/28/2004 by function. Pass the structure to the function
+
 #include <iostream>
 using namespace std;
 
@@ -9,7 +10,6 @@ struct dates
     int month;
     int day;
     int year;
-
 };
 
 void Print_Dates(dates date[], int n)
@@ -19,11 +19,9 @@ void Print_Dates(dates date[], int n)
 
     for (i = 0; i < n; i++)
     {
-        cout << "Dates " << i + 1 << ". : " << date[i].month << "/" << date[i].day << "/" << date[i].year << endl;
+        cout << "Date " << i + 1 << ". : " << date[i].month << "/" << date[i].day << "/" << date[i].year << endl;
     }
-
 }
-
 
 int main()
 {
@@ -47,8 +45,7 @@ int main()
         cin >> date[i].day;
 
         cout << endl;
-
     }
-    
+
     Print_Dates(date, num);
 }
